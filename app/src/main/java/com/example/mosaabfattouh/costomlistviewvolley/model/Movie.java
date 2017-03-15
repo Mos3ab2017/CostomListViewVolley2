@@ -1,4 +1,4 @@
-package model;
+package com.example.mosaabfattouh.costomlistviewvolley.model;
 
 import java.util.ArrayList;
 
@@ -8,11 +8,8 @@ public class Movie {
     private double rating;
     private ArrayList<String> genre;
 
-/**
- * Created by mosaabfattouh on 3/13/17.
- */
 
-public class Movie{
+public  Movie(){
 
     }
     public Movie(String name, String thumbnailUrl, int year, double rating,

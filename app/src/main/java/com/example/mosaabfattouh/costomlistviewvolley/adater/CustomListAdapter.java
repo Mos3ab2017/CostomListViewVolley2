@@ -1,10 +1,12 @@
-package adater;
+package com.example.mosaabfattouh.costomlistviewvolley.adater;
 
-/**
- * Created by mosaabfattouh on 3/13/17.
- */
 
-//import java.util.List;
+import com.example.mosaabfattouh.costomlistviewvolley.R;
+import com.example.mosaabfattouh.costomlistviewvolley.app.AppController;
+import com.example.mosaabfattouh.costomlistviewvolley.model.Movie;
+
+
+import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,11 +15,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
 
-import java.util.List;
 
-public class CustomListAdapter  {
-   /* private Activity activity;
+
+
+     public class CustomListAdapter extends BaseAdapter {
+
+   private Activity activity;
     private LayoutInflater inflater;
     private List<Movie> movieItems;
     ImageLoader imageLoader = AppController.getInstance().getImageLoader();
@@ -87,6 +93,7 @@ public class CustomListAdapter  {
         return convertView;
     }
 
+    }
 
-*/
-}
+
+
