@@ -46,7 +46,7 @@ import org.junit.Test;
 //public class MainActivity extends Activity {
 
 
-    public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+   public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
         //  public class MainActivity    extends Activity {
 
