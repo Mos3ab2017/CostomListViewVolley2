@@ -10,7 +10,16 @@ import com.example.mosaabfattouh.costomlistviewvolley.app.AppController;
 import com.example.mosaabfattouh.costomlistviewvolley.model.Movie;
 import java.util.List;
 
+import android.content.Context;
 
+
+import org.junit.Test;
+import org.junit.runner.Description;
+import org.junit.runner.RunWith;
+
+
+import org.junit.Assert;
+import org.junit.Test;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.graphics.Color;
@@ -36,12 +45,18 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import static junit.framework.Assert.assertEquals;
+import android.content.Context;
 //import android.support.test.InstrumentationRegistry;
 //import android.support.test.runner.AndroidJUnit4;
 
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
 import org.junit.Test;
+import org.junit.runner.Runner;
+import org.junit.runner.notification.RunNotifier;
 
 //public class MainActivity extends Activity {
 
@@ -235,7 +250,36 @@ import org.junit.Test;
             drawer.closeDrawer(GravityCompat.START);
             return true;
         }
-    }
+
+    @RunWith(AndroidJUnit4.class)
+       public class ExampleInstrumentedTest {
+           @Test
+           public void useAppContext() throws Exception {
+          //      Context of the app under test.
+              Context appContext = InstrumentationRegistry.getTargetContext();
+
+             Assert.assertEquals("com.example.mosaabfattouh.costomlistviewvolley", appContext.getPackageName());
+           }
+       }
+
+       private class AndroidJUnit4 extends Runner {
+           @Override
+           public Description getDescription() {
+               return null;
+           }
+
+           @Override
+           public void run(RunNotifier notifier) {
+
+           }
+       }
+
+       private static class InstrumentationRegistry {
+           public static Context getTargetContext() {
+               return  null;
+           }
+       }
+   }
 
 
 /*
